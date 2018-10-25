@@ -20,7 +20,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8000 // Change this to your server port
-    return `http://localhost:${port}/data/restaurants.json`; ////
+    return `https://sotheavyva.github.io/restaurant-reviews-app-stage-1/data/restaurants.json`; ////
   }
 
   /**
