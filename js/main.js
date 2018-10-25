@@ -164,7 +164,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.setAttribute('alt', 'Picture of ${restaurant.name}restaurant'); //
+  image.setAttribute('alt', `Picture of ${restaurant.name}restaurant.`); //
   li.append(image);
 
   const name = document.createElement('h2');
@@ -192,7 +192,7 @@ createRestaurantHTML = (restaurant) => {
 /**
  * Add markers for current restaurants to the map.
  */
-/* addMarkersToMap = (restaurants = self.restaurants) => {
+addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
@@ -204,7 +204,7 @@ createRestaurantHTML = (restaurant) => {
   });
 
 }
-*/
+/*
 addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
@@ -214,4 +214,4 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     });
     self.markers.push(marker);
   });
-}
+}*/
