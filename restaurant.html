@@ -33,20 +33,23 @@
   <!-- End header -->
 
   <!-- Beginning main -->
+  <div class="row">
   <main id="maincontent" class="restaurant-main" aria-describedby="restaurant-name" role="name">
     <!-- Beginning map -->
-    <section id="map-container" aria-label="map of restaurants">
+    <section id="map-container" aria-label="map of restaurants" class="col-12 col-s-12">
       <div id="map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container" role="article" aria-label="restaurant details" tabindex="0">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img" alt="restaurant photo">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+
+    <section id="restaurant-container" role="article" aria-label="restaurant details">
+      <h1 id="restaurant-name" class="col-12 col-s-12" tabindex="0"></h1>
+      <img id="restaurant-img" class="col-12 col-s-12" tabindex="0"alt="restaurant photo">
+      <p id="restaurant-cuisine" class="col-12 col-s-12" tabindex="0"></p>
+      <p id="restaurant-address"class="col-12 col-s-12" tabindex="0"></p>
+      <table id="restaurant-hours" class="col-12 col-s-12" tabindex="0"></table>
     </section>
+  </div>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
@@ -72,7 +75,7 @@
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfn1FqZh-8etwM8l1VJ5Lol13C0Ft7c74&libraries=places&callback=initMap"></script>
+ <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfn1FqZh-8etwM8l1VJ5Lol13C0Ft7c74&libraries=places&callback=initMap"></script>-->
   <!-- End scripts -->
 
 </body>
